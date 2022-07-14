@@ -1,26 +1,40 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ScrabbleScore.Models
 {
-  public class Score
+  public class Scrabble
   {
-    public string Word { get; set; }
-    private static List<Score> _instances = new List<Score> {};
-
-    public Score(string word)
+    public static Dictionary<int, string> pointStructure = new Dictionary<int, string>()
     {
-      Word = word;
-      _instances.Add(this);
+      {1, "A, E, I, O, U, L, N, R, S, T"},
+      {2, "D, G"},
+      {3, "B, C, M, P" },
+      {4, "F, H, V, W, Y" },
+      {5, "K" },
+      {8, "J, X" },
+      {10, "Q, Z" }
+    };
+    // private static int _score;
+
+    public static int Score(string word)
+    {
+      string newWord = word.ToUpper();
+      int score = 0;
+      for (int i = 0; i < newWord.Length; i++) 
+      {
+        if(pointStructure[1].Contains(newWord[i])) 
+        {
+          score += 1;
+        }
+      }
+      return score;
     }
 
-    public static List<Score> GetLetter()
-    {
-      return _instances;
-    }
-
-    public static void ClearAll()
-    {
-      _instances.Clear();
-    }
+    // public static void ClearAll()
+    // {
+    //   _score.Clear();
+    // }
   }
 }

@@ -6,35 +6,53 @@ using ScrabbleScore.Models;
 namespace ScrabbleScore.Tests
 {
   [TestClass]
-  public class ScoreTests : IDisposable
+  public class ScrabbleTests //: IDisposable
   {
-    public void Dispose()
+    // public void Dispose()
+    // {
+    //   Score.ClearAll();
+    // }
+
+    [TestMethod]
+    public void Score_GetScore_1()
     {
-      Score.ClearAll();
+      string word = "A";
+      int result = Scrabble.Score(word);
+      Assert.AreEqual(1, result);
     }
 
     [TestMethod]
-    public void ScoreConstructor_CreateInstanceOfScore_Score()
+    public void Score_GetScore_3()
     {
-      Score newScore = new Score("test");
-      Assert.AreEqual(typeof(Score), newScore.GetType());
+      string word = "tea";
+      int result = Scrabble.Score(word);
+      Assert.AreEqual(3, result);
     }
 
-    [TestMethod]
-    public void GetWord_ReturnWord_String()
-    {
-      string word = "test";
-      Score newScore = new Score(word);
-      string result = newScore.Word;
-      Assert.AreEqual(word, result);
-    }
+    // [TestMethod]
+    // public void GetWord_ReturnWord_String()
+    // {
+    //   string word = "test";
+    //   Score newScore = new Score(word);
+    //   string result = newScore.Word;
+    //   Assert.AreEqual(word, result);
+    // }
 
-    [TestMethod]
-    public void GetLetter_ReturnEmptyList_LetterList()
-    {
-      List<Score> newList = new List<Score> { };
-      List<Score> result = Score.GetLetter();
-      CollectionAssert.AreEqual(newList, result);
-    }
+    // [TestMethod]
+    // public void GetLetter_ReturnEmptyList_ScoreList()
+    // {
+    //   List<Score> newList = new List<Score> { };
+    //   List<Score> result = Score.GetScore();
+    //   CollectionAssert.AreEqual(newList, result);
+    // }
+
+    // [TestMethod]
+    // public void GetLetter_ReturnLetters_LetterList()
+    // {
+    //   string word1 = "A";
+    //   string word2 = "B";
+    //   List<Score> letter = new List<Score>(word);
+    //   Assert.AreEqual(word,  );
+    // }
   }
 }
