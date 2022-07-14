@@ -13,10 +13,10 @@ namespace ScrabbleScore.Tests
     // }
 
     [TestMethod]
-    public void ScoreConstructor_DescriptionOfBehavior_ExpectedReturnValue()
+    public void ScoreConstructor_CreateInstanceOfScore_Score()
     {
-      // any necessary logic to prep for test; instantiating new classes, etc.
-      Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
+      Score newScore = new Score("test");
+      Assert.AreEqual(typeof(Score), newScore.GetType());
     }
   }
 }
