@@ -1,8 +1,8 @@
-# {C# Application Name}
+# Scrabble Score
 
 #### By _**Zhibin Liang**_  
 
-#### _{Brief description of application}_  
+#### _Return scrabble score for a inpputed word_  
 
 ---
 ## Technologies Used
@@ -13,22 +13,22 @@
 ---
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_Return scrabble score for a inpputed word._
 
 ---
 ## Setup/Installation Requirements
 
 * Install *`Microsoft .NET SDK`*
-* Place files in a folder named `ProjectName.Solution`
-    <pre>ProjectName.Solution
-    ├── ProjectName
-    └── ProjectName.Tests</pre>
+* Clone the repo
+```sh
+https://github.com/zbl14/ScrabbleScore.Solution.git
+```
 <details>
 <summary><strong>To Run</strong></summary>
-Navigate to  
-   <pre>ProjectName.Solution
-   ├── <strong>ProjectName</strong>
-   └── ProjectName.Tests</pre>
+Navigate to ScrabbleScore
+   <pre>ScrabbleScore.Solution
+   ├── <strong>ScrabbleScore</strong>
+   └── ScrabbleScore.Tests</pre>
 
 Run ```$ dotnet run``` in the console
 </details>
@@ -36,12 +36,12 @@ Run ```$ dotnet run``` in the console
 <details>
 <summary><strong>For Testing</strong></summary>
 Navigate to  
-    <pre>ProjectName.Solution
-    ├── ProjectName
-    └── <strong>ProjectName.Tests</strong></pre>
+    <pre>ScrabbleScore.Solution
+    ├── ScrabbleScore
+    └── <strong>ScrabbleScore.Tests</strong></pre>
 
+Run ```$ dotnet restore``` in the console
 Run ```$ dotnet test``` in the console
-
 </details>
 <br/>
 
@@ -50,8 +50,7 @@ This program was built using *`Microsoft .NET SDK 5.0.401`*, and may not be comp
 ---
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _enter a number will return a score, which should not_
 
 ## License
 MIT
