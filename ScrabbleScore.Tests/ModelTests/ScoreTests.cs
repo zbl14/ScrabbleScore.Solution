@@ -29,6 +29,14 @@ namespace ScrabbleScore.Tests
       Assert.AreEqual(3, result);
     }
 
+    [TestMethod]
+    public void Score_GetScore_5()
+    {
+      string word = "dog";
+      int result = Scrabble.Score(word);
+      Assert.AreEqual(5, result);
+    }
+
     // [TestMethod]
     // public void GetWord_ReturnWord_String()
     // {

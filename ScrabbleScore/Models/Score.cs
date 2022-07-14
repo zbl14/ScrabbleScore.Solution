@@ -28,6 +28,10 @@ namespace ScrabbleScore.Models
         {
           score += 1;
         }
+        else if (pointStructure[2].Contains(newWord[i]))
+        {
+          score += 2;
+        }
       }
       return score;
     }
