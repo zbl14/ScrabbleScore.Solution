@@ -18,5 +18,14 @@ namespace ScrabbleScore.Tests
       Score newScore = new Score("test");
       Assert.AreEqual(typeof(Score), newScore.GetType());
     }
+
+    [TestMethod]
+    public void GetWord_ReturnWord_String()
+    {
+      string word = "test";
+      Score newScore = new Score(word);
+      string result = newScore.Word;
+      Assert.AreEqual(word, result);
+    }
   }
 }
