@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ScrabbleScore.Models;
 
@@ -26,6 +27,14 @@ namespace ScrabbleScore.Tests
       Score newScore = new Score(word);
       string result = newScore.Word;
       Assert.AreEqual(word, result);
+    }
+
+    [TestMethod]
+    public void GetLetter_ReturnEmptyList_LetterList()
+    {
+      List<Score> newList = new List<Score> { };
+      List<Score> result = Score.GetLetter();
+      CollectionAssert.AreEqual(newList, result);
     }
   }
 }
