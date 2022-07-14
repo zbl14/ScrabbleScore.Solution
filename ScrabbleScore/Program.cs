@@ -1,7 +1,7 @@
 using System;
-using ProjectName.Models;
+using ScrabbleScore.Models;
 
-namespace ProjectName
+namespace ScrabbleScore
 {
   public class Program
   {

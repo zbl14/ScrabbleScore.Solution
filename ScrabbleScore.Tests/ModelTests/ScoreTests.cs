@@ -1,11 +1,11 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName.Models;
+using ScrabbleScore.Models;
 
-namespace ProjectName.Tests
+namespace ScrabbleScore.Tests
 {
   [TestClass]
-  public class ClassNameTests // : IDisposable
+  public class ScoreTests // : IDisposable
   {
     // public void Dispose()
     // {
@@ -13,7 +13,7 @@ namespace ProjectName.Tests
     // }
 
     [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void ScoreConstructor_DescriptionOfBehavior_ExpectedReturnValue()
     {
       // any necessary logic to prep for test; instantiating new classes, etc.
       Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
