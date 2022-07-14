@@ -37,6 +37,14 @@ namespace ScrabbleScore.Tests
       Assert.AreEqual(5, result);
     }
 
+    [TestMethod]
+    public void Score_GetScore_25()
+    {
+      string word = "quickly";
+      int result = Scrabble.Score(word);
+      Assert.AreEqual(25, result);
+    }
+
     // [TestMethod]
     // public void GetWord_ReturnWord_String()
     // {

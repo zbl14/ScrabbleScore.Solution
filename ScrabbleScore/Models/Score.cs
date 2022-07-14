@@ -16,7 +16,6 @@ namespace ScrabbleScore.Models
       {8, "J, X" },
       {10, "Q, Z" }
     };
-    // private static int _score;
 
     public static int Score(string word)
     {
@@ -31,6 +30,26 @@ namespace ScrabbleScore.Models
         else if (pointStructure[2].Contains(newWord[i]))
         {
           score += 2;
+        }
+        else if (pointStructure[3].Contains(newWord[i]))
+        {
+          score += 3;
+        }
+        else if (pointStructure[4].Contains(newWord[i]))
+        {
+          score += 4;
+        }
+        else if (pointStructure[5].Contains(newWord[i]))
+        {
+          score += 5;
+        }
+        else if (pointStructure[8].Contains(newWord[i]))
+        {
+          score += 8;
+        }
+        else
+        {
+          score += 10;
         }
       }
       return score;
