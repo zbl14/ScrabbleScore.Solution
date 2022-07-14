@@ -6,12 +6,12 @@ using ScrabbleScore.Models;
 namespace ScrabbleScore.Tests
 {
   [TestClass]
-  public class ScoreTests // : IDisposable
+  public class ScoreTests : IDisposable
   {
-    // public void Dispose()
-    // {
-    //   ClassName.ClearAll();
-    // }
+    public void Dispose()
+    {
+      Score.ClearAll();
+    }
 
     [TestMethod]
     public void ScoreConstructor_CreateInstanceOfScore_Score()
