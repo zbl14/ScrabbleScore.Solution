@@ -53,6 +53,14 @@ namespace ScrabbleScore.Tests
       Assert.AreEqual(0, result);
     }
 
+    [TestMethod]
+    public void Score_GetScore_13()
+    {
+      string word = " quit ";
+      int result = Scrabble.Score(word);
+      Assert.AreEqual(13, result);
+    }
+
     // [TestMethod]
     // public void GetWord_ReturnWord_String()
     // {
