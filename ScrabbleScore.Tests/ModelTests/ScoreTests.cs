@@ -45,6 +45,14 @@ namespace ScrabbleScore.Tests
       Assert.AreEqual(25, result);
     }
 
+    [TestMethod]
+    public void Score_GetScore_0()
+    {
+      string word = "";
+      int result = Scrabble.Score(word);
+      Assert.AreEqual(0, result);
+    }
+
     // [TestMethod]
     // public void GetWord_ReturnWord_String()
     // {

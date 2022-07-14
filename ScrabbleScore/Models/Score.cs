@@ -19,6 +19,7 @@ namespace ScrabbleScore.Models
 
     public static int Score(string word)
     {
+      if (word == null) return 0;
       string newWord = word.ToUpper();
       int score = 0;
       for (int i = 0; i < newWord.Length; i++) 
