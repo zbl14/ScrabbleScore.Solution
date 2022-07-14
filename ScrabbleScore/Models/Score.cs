@@ -55,10 +55,5 @@ namespace ScrabbleScore.Models
       }
       return score;
     }
-
-    // public static void ClearAll()
-    // {
-    //   _score.Clear();
-    // }
   }
 }
